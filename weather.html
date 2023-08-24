@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <style>
+        body{
+            background-color: rgb(111, 194, 241);
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+        #navbar{
+            display: flex;
+            justify-content: center;
+        }
+        #Searchbutton{
+            border: 0px;
+            background: white;
+            border: 1;
+            border-radius: 50%;
+            margin-left: 10px;
+            height: 50px;
+            width: 60px;
+        }
+        #search{
+            background: white;
+            border: 0;
+            outline: 0;
+            height: 21px;
+            border-radius: 20%;
+        }
+        #input2{
+            border: 0px;
+            height: 30px;
+            padding: 10px 25px;
+            float: 1;
+            border-radius: 30px;
+        }
+        #card{
+            height: 200px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+
+        }
+        #mist{
+            height: 200px;
+            width: 200px;
+        }
+        #City{
+            margin: 0px;
+            height: 20px;
+            width: 100%;
+            border: 1px solid black;
+            text-align: center;
+        }
+        #bottom{
+            display: flex;
+            justify-content: space-between;
+            height: 200px;
+            width: 80%;
+            margin-top: 80px;
+            margin-left: 100px;
+
+        }
+        #wind{
+            height: 60px;
+            width: 60px;
+        }
+        #humid{
+            height: 60px;
+            width: 60px;
+        }
+        #win{
+            position: relative;
+            right: 10px;
+        }
+        #humidity{
+            position: relative;
+            left: 25px;
+        }
+        .feel{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div id="navbar">
+        <div class="input1">
+            <input type="text" placeholder="Enter a place" id="input2">
+        </div>
+        <div class="s">
+            <button id="Searchbutton"><img src="search.png" id="search"></button>
+        </div>
+    </div>
+    <div id="card">
+        <img src="mist.png" id="weatherIcon">
+    </div>
+    <h1 style="text-align: center;" id="temp">- -</h1>
+    <h2 style="text-align: center;" id="city">- -</h2>
+    <div class="feel">
+        <p>Feels like:</p>
+        <p id="add"></p>
+    </div>
+    <div id="bottom">
+        <div><img id="humid" src="humidity.png">
+            <h2>Humidity</h2>
+            <h2 id="humidity"> - -</h2>
+        </div>
+        <div><img id="wind"src="wind.png">
+            <h2>Wind</h2>
+            <h2 id="win">- -</h2>
+        </div>
+    </div>
+</body>
+</html>
